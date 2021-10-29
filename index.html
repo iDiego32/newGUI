@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/misFunciones.js"></script>  
+    <title>GUI Reto 3 y 4 </title>
+</head>
+
+<body style="background-color: darkgray;">
+
+    <h1> Interfaz grafica de usurario Reto 3 y 4</h1>
+    <h2>Categoria </h2>
+    <script type="text/javascript"> 
+    window.onload = autoInicioCategoria();
+    </script>
+    
+    <div>
+        <button onclick="guardarInformacionCategorias()">Guardar Categorias</button>
+        <input type="text" id="Cname" placeholder="Nombre">
+        <input type="text" id="Cdescription" placeholder="Descripcion">
+
+    </div>
+    <center>
+        <div id="resultado1"></div>
+    </center>
+
+
+<!--Tabla Motocicletas-->
+
+    <h2>Motocicletas</h2>
+    <script type="text/javascript"> 
+    window.onload = autoInicioMotos();
+
+    </script>
+    
+    <div>
+        <button onclick="guardarInformacionMotos()">Guardar Moto</button>
+        <input type="text" id="Oname" placeholder="Nombre">
+        <input type="text" id="Obrand" placeholder="Marca">
+        <input type="number" id="Oyear" placeholder="Año">
+        <input type="text" id="Odescription" placeholder="Descripcion">
+        <select id="select-category"></select>
+    </div>
+    <center>
+        <div id="resultado2"></div>
+        
+    </center>
+
+<!--Tabla Cliente-->
+
+<h2>Cliente </h2>
+<script type="text/javascript"> 
+window.onload = autoInicioCliente();
+</script>
+<div>
+    <button onclick="guardarInformacionCliente()">Guardar Cliente</button>
+    <input type="text" id="Clemail" placeholder="E-mail">
+    <input type="text" id="Clpassword" placeholder="Contraseña">
+    <input type="text" id="Clname" placeholder="Nombre">
+    <input type="number" id="Clage" placeholder="Edad">
+</div>
+
+<center>
+    <div id="resultado3"></div>
+</center>
+
+
+<!--Tabla Mensajes-->
+
+<h2>Mensajes </h2>
+<script type="text/javascript"> 
+window.onload = autoInicioMensajes();
+</script>
+<div>
+    <button onclick="guardarInformacionMensaje()">Guardar Mensaje</button>
+    <input type="text" id="Imensaje" placeholder="Mensaje">
+</div>
+
+<center>
+    <div id="resultado4"></div>
+</center>
+<div>
+    <h4><i>(La siguiente opcion te servira para mensajes y reservaciones)</i></h4>
+    <select id="select-cliente"></select>
+    <select id="select-moto"></select>
+</div>
+<!--Tabla Reservaciones-->
+
+<h2>Reservaciones</h2>
+<script type="text/javascript"> 
+window.onload = autoInicioReservacion();
+</script>
+
+<div>
+    <button onclick="guardarInformacionReservacion()">Guardar reservacion</button>
+    <input type="date" id="Ifecha" placeholder="Fecha reserva">
+    <input type="date" id="Ifechadev" placeholder="Fecha devolucion">
+</div>
+
+<center>
+    <div id="resultado5"></div>
+</center>
+
+</body>
+</html>
